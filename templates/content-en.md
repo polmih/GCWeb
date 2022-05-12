@@ -7,7 +7,6 @@ altLangPage: content-fr.html
 secondlevel: false
 dateModified: 2017-09-29
 share: true
-feedbackPath: "/sites/feedback/ajax/report-problem-en.html"
 
 ---
 {% include components/inc-byline.html %}

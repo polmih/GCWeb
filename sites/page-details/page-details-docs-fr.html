@@ -3,13 +3,13 @@
 	"title": "Documentation pour la fonctionnalité du site détails de page",
 	"language": "fr",
 	"altLangPage": "page-details-docs-en.html",
-	"breadcrumb": [
+	"breadcrumbs": [
 		{ "title": "Canada.ca", "link": "https://www.canada.ca/en.html" }
 	],
 	"secondlevel": false,
 	"dateModified": "2022-04-25",
 	"share": "true",
-	"feedbackPath": "/sites/feedback/ajax/report-problem-en.html"
+	"feedbackPath": "../feedback/ajax/report-problem-en.html"
 }
 ---
 <span class="wb-prettify all-pre hide"></span>
@@ -38,13 +38,13 @@
 	<li><a href="page-details-without-buttons-fr.html">Détails de la page sans exemples de boutons Signaler un problème et Partager cette page</a></li>
 	<li><a href="page-details-without-report-btn-fr.html">Détails de la page sans exemple de bouton Signaler un problème</a></li>
 	<li><a href="page-details-without-share-btn-fr.html">Détails de la page sans exemple de bouton Partager cette page</a></li>
-	<li><a href="page-details-v1-fr.html">Exemple de détails de page v.1.0 (obsolète)</a></li>
+	<li><a href="deprecated/page-details-v1-fr.html">Exemple de détails de page v.1.0 (obsolète)</a></li>
 </ul>
 
 <h2>Comment mettre en œuvre</h2>
 <ul>
 	<li>
-		<p>Pour afficher le bouton "Signaler un problème sur cette page", créez une code>&lt;div&gt;</code> avec l'attribut de données suivant : <code>data-ajax-replace="/sites/feedback/ajax/report-problem-fr.html"</code>.</p>
+		<p>Pour afficher le bouton "Signaler un problème sur cette page", créez une code>&lt;div&gt;</code> avec l'attribut de données suivant : <code>data-ajax-replace="../feedback/ajax/report-problem-fr.html"</code>.</p>
 		<p>Pour la version HTML simplifiée, un élément de lien doit être créé qui pointe vers la page du formulaire de signalement d'un problème : <code>&lt;a class="btn btn-default btn-block" href="https://www.canada.ca/fr/signaler-probleme.html"&gt;Signaler un problème sur cette page&lt;/a&gt;</code></p>
 		<p>Pour plus d'informations sur le plugiciel Data Ajax, veuillez visiter <a href="https://wet-boew.github.io/wet-boew/docs/ref/data-ajax/data-ajax-fr.html" >Page de documentation Data Ajax</a></p>
 	</li>
@@ -75,7 +75,7 @@
 </table>
 
 <h3>Classe CSS (v1.0)</h3>
-<p><code>détails de la page</code></p>
+<p><code>page-details</code></p>
 
 
 <h3>Gabarit (v.2.0)</h3>
@@ -89,7 +89,7 @@
 	&lt;h2 class="wb-inv"&gt;Détails de la page&lt;/h2&gt;</ins>
 	&lt;div class="row"&gt;
 		&lt;div class="col-sm-6 col-md-5 col-lg-4"&gt;
-			<ins>&lt;div data-ajax-replace="/sites/feedback/ajax/report-problem-fr.html">
+			<ins>&lt;div data-ajax-replace="../feedback/ajax/report-problem-fr.html">
 				&lt;a class="btn btn-default btn-block" href="https://www.canada.ca/fr/signaler-probleme.html"&gt;Signaler un problème sur cette page&lt;/a&gt;
 			&lt;/div&gt;</ins>
 		&lt;/div&gt;
@@ -107,7 +107,7 @@
 <pre><code><del>&lt;div class="pagedetails"&gt;</del>
 	&lt;div class="row"&gt;
 		&lt;div class="col-sm-6 col-md-5 col-lg-4"&gt;
-			&lt;details class="brdr-0"&gt;
+			<del>&lt;details class="brdr-0"&gt;
 				&lt;summary class="btn btn-default text-center"&gt;Signaler un problème sur cette page&lt;/summary&gt;
 				&lt;div class="well row"&gt;
 					&lt;div class="gc-rprt-prblm"&gt;
@@ -120,7 +120,7 @@
 						&lt;/div&gt;
 					&lt;/div&gt;
 				&lt;/div&gt;
-			&lt;/détails&gt;
+			&lt;/détails&gt;</del>
 		&lt;/div&gt;
 		&lt;div class="wb-share col-sm-4 col-md-3 col-sm-offset-2 col-md-offset-4 col-lg-offset-5" data-wb-share='{&quot;lnkClass&quot; : &quot;btn btn-default btn-block&quot;}' &gt;
 		&lt;/div&gt;
@@ -199,7 +199,7 @@
 	&lt;h2 class="wb-inv"&gt;Détails de la page&lt;/h2&gt;</ins>
 	&lt;div class="row"&gt;
 		&lt;div class="col-sm-6 col-md-5 col-lg-4"&gt;
-			<ins>&lt;div data-ajax-replace="/sites/feedback/ajax/report-problem-fr.html">
+			<ins>&lt;div data-ajax-replace="../feedback/ajax/report-problem-fr.html">
 				&lt;a class="btn btn-default btn-block" href="https://www.canada.ca/fr/signaler-probleme.html"&gt;Signaler un problème sur cette page &lt;/a&gt;
 			&lt;/div&gt;</ins>
 		&lt;/div&gt;
@@ -215,7 +215,7 @@
 <pre><code><del>&lt;div class="pagedetails"&gt;</del>
 	&lt;div class="row"&gt;
 		&lt;div class="col-sm-6 col-md-5 col-lg-4"&gt;
-			&lt;details class="brdr-0"&gt;
+			<del>&lt;details class="brdr-0"&gt;
 				&lt;summary class="btn btn-default text-center"&gt;Signaler un problème sur cette page&lt;/summary&gt;
 				&lt;div class="well row"&gt;
 					&lt;div class="gc-rprt-prblm"&gt;
@@ -228,7 +228,7 @@
 						&lt;/div&gt;
 					&lt;/div&gt;
 				&lt;/div&gt;
-			&lt;/détails&gt;
+			&lt;/détails&gt;</del>
 		&lt;/div&gt;
 	&lt;/div&gt;
 		&lt;dl id="wb-dtmd"&gt;

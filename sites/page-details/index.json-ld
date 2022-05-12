@@ -70,16 +70,6 @@
 				"title": "Détails de la page sans le bouton 'Partager cette page'",
 				"language": "fr",
 				"path": "page-details-without-share-btn-fr.html"
-			},
-			{
-				"title": "Page details v.1.0 (deprecated)",
-				"language": "en",
-				"path": "page-details-v1-en.html"
-			},
-			{
-				"title": "Détails de la page version 1.0 (obsolète)",
-				"language": "fr",
-				"path": "page-details-v1-fr.html"
 			}
 		]
 	}

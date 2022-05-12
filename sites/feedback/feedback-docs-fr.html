@@ -3,13 +3,13 @@
 	"title": "Commentaires de page (SUP) - Documentation",
 	"language": "fr",
 	"altLangPage": "feedback-docs-en.html",
-	"breadcrumb": [
+	"breadcrumbs": [
 		{ "title": "Canada.ca", "link": "https://www.canada.ca/en.html" }
 	],
 	"secondlevel": false,
 	"dateModified": "2022-04-26",
 	"share": "true",
-	"feedbackPath": "/sites/feedback/ajax/report-problem-fr.html"
+	"feedbackPath": "ajax/report-problem-fr.html"
 
 }
 ---
@@ -30,6 +30,7 @@
 <h2>Exemple pratique</h2>
 <ul>
 	<li><a href="feedback-fr.html">Exemple de formulaire de commentaires de page</a></li>
+	<li><a href="feedback-aa-fr.html">Exemple de formulaire de commentaires de page en utilisant les attributs de données analytiques</a></li>
 	<li><a href="/sites/page-details/page-details-v1-fr.html">Exemple de formulaire de commentaires de page version 1</a></li>
 
 </ul>
@@ -37,7 +38,7 @@
 <h2>Comment mettre en œuvre</h2>
 <ul>
 	<li>
-		<p>Pour afficher le formulaire de commentaires de page, créez une code>&lt;div&gt;</code> avec l'attribut de données suivant : <code>data-ajax-replace="/sites/feedback/ajax/report-problem-fr.html"</code>.</p>
+		<p>Pour afficher le formulaire de commentaires de page, créez une code>&lt;div&gt;</code> avec l'attribut de données suivant : <code>data-ajax-replace="ajax/report-problem-fr.html"</code>.</p>
 		<p>Pour la version HTML simplifiée, un élément de lien doit être créé qui pointe vers la page du formulaire de signalement d'un problème : <code>&lt;a class="btn btn-default btn-block" href="https://www.canada.ca/fr/signaler-probleme.html"&gt;Signaler un problème sur cette page&lt;/a&gt;</code></p>
 		<p>Pour plus d'informations sur le plugiciel Data Ajax, veuillez visiter <a href="https://wet-boew.github.io/wet-boew/docs/ref/data-ajax/data-ajax-fr.html" >Page de documentation Data Ajax</a></p>
 	</li>
@@ -69,7 +70,7 @@
 	<div class="col-md-6">
 		<h5>Version 2.0</h5>
 		<p>Le html inséré par le plugiciel Data Ajax se trouve sur la page suivante : <a href="https://github.com/wet-boew/GCWeb/blob/master/sites/feedback/ajax/report-problem-fr.html" >https://github.com/wet-boew/GCWeb/blob/master/sites/feedback/ajax/report-problem-fr.html</a>.</p >
-<pre><code><ins>&lt;div data-ajax-replace="/sites/feedback/ajax/report-problem-fr.html">
+<pre><code><ins>&lt;div data-ajax-replace="ajax/report-problem-fr.html">
 	&lt;a class="btn btn-default btn-block" href="https://www.canada.ca/fr/signaler-probleme.html"&gt;Signaler un problème sur cette page&lt;/a&gt;
 &lt;/div&gt;</ins></code></pre>
 	</div>

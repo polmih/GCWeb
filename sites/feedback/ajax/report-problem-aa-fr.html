@@ -3,12 +3,18 @@
 	<div class="well row">
 		<div class="gc-rprt-prblm">
 			<div class="gc-rprt-prblm-frm gc-rprt-prblm-tggl">
-				<form action="#" >
+				<form action="#" id="gc-rprt-prblm-form" class="wb-postback" data-wb-postback="{&quot;success&quot;:&quot;.success-message&quot;,&quot;failure&quot;:&quot;.failure-message&quot;,&quot;content&quot;:&quot;.form-content&quot;}">
 					<!--
 
 					Insérez ici la configuration de soumission du formulaire
 
 					-->
+					<input type="hidden" name="externalReferer" value="">
+					<input type="hidden" name="pageTitle" value=""> <!-- Copy of the title of the page -->
+					<input type="hidden" name="submissionPage" value=""> <!-- Copy of the page URL -->
+					<input type="hidden" name="lang" value="fr">
+					<input type="hidden" name="pageOwner" value="gc:institutions/"> <!-- Department name from canada.ca controlled vocabulary -->
+					<input name="subject" type="hidden" value="Signaler un problème ou une erreur sur cette page">
 					<fieldset>
 						<legend>
 							<span class="field-name">Veuillez sélectionner toutes les cases qui s'appliquent :</span>
@@ -88,13 +94,14 @@
 							<input name="problem12" type="hidden" value="">
 						</div>
 					</fieldset>
-					<strong><button type="submit" class="btn btn-primary wb-toggle" data-toggle='{"stateOff": "hide", "stateOn": "show", "selector": ".gc-rprt-prblm-tggl"}'>Soumettre</button></strong>
+					<button type="submit" class="btn btn-primary">Soumettre</button>
 				</form>
 			</div>
-			<div class="gc-rprt-prblm-thnk gc-rprt-prblm-tggl hide">
+			<div class="success-message hide">
 				<h3>Merci de votre aide!</h3>
 				<p>Vous ne recevrez pas de réponse. Pour toute question, s’il vous plaît <a href="https://www.canada.ca/fr/contact.html">contactez-nous</a>.</p>
 			</div>
+			<p class="failure-message hide">Nous somme désolé, un problème est survenu lors de la soumission de votre formulaire. Veuillez nous envoyer l'information via une méthode alternative.</p>
 		</div>
 	</div>
 </details>

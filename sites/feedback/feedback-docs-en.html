@@ -3,13 +3,13 @@
 	"title": "Page feedback (RAP) - Documentation",
 	"language": "en",
 	"altLangPage": "feedback-docs-fr.html",
-	"breadcrumb": [
+	"breadcrumbs": [
 		{ "title": "Canada.ca", "link": "https://www.canada.ca/en.html" }
 	],
 	"secondlevel": false,
 	"dateModified": "2022-04-26",
 	"share": true,
-	"feedbackPath": "/sites/feedback/ajax/report-problem-en.html"
+	"feedbackPath": "ajax/report-problem-en.html"
 }
 ---
 <span class="wb-prettify all-pre hide"></span>
@@ -29,12 +29,13 @@
 <h2>Working example</h2>
 <ul>
 	<li><a href="feedback-en.html">Default page feedback form example</a></li>
-	<li><a href="/sites/page-details/page-details-v1-en.html">Default page feedback form version 1 example</a></li>
+	<li><a href="feedback-aa-en.html">Default page feedback form with analytics data attributes example</a></li>
+	<li><a href="/sites/page-details/deprecated/page-details-v1-en.html">Default page feedback form version 1 example</a></li>
 </ul>
 
 <h2>How to implement</h2>
 <ul>
-	<li><p>To show the page feedback form, create a <code>&lt;div&gt;</code> with the following data attribute: <code>data-ajax-replace="/sites/feedback/ajax/report-problem-en.html"</code>.</p>
+	<li><p>To show the page feedback form, create a <code>&lt;div&gt;</code> with the following data attribute: <code>data-ajax-replace="ajax/report-problem-en.html"</code>.</p>
 		<p>For the basic HTML version, a link element should be created inside a <code>&lt;div&gt;</code> that points to the report a problem form page: <code>&lt;div&gt;&lt;a class="btn btn-default btn-block" href="https://www.canada.ca/en/report-problem.html"&gt;Report a problem on this page&lt;/a&gt;&lt;/div&gt;</code></p>
 		<p>For more information about Data Ajax plugin, please visit <a href="https://wet-boew.github.io/wet-boew/docs/ref/data-ajax/data-ajax-en.html">Data Ajax documentation page</a></p>
 	</li>
@@ -67,7 +68,7 @@
 	<div class="col-md-6">
 		<h5>Version 2.0</h5>
 		<p>The html inserted by the Data Ajax plugin can be found on the following page: <a href="https://github.com/wet-boew/GCWeb/blob/master/sites/feedback/ajax/report-problem-en.html" >https://github.com/wet-boew/GCWeb/blob/master/sites/feedback/ajax/report-problem-en.html</a>.</p>
-<pre><code><ins>&lt;div data-ajax-replace="/sites/feedback/ajax/report-problem-en.html" &gt;
+<pre><code><ins>&lt;div data-ajax-replace="ajax/report-problem-en.html" &gt;
 	&lt;a class="btn btn-default btn-block" href="https://www.canada.ca/en/report-problem.html"&gt;Report a problem on this page&lt;/a&gt;
 &lt;/div&gt;</ins></code></pre>
 	</div>

@@ -3,12 +3,18 @@
 	<div class="well row">
 		<div class="gc-rprt-prblm">
 			<div class="gc-rprt-prblm-frm gc-rprt-prblm-tggl">
-				<form action="#" >
+				<form action="#" id="gc-rprt-prblm-form" class="wb-postback" data-wb-postback="{&quot;success&quot;:&quot;.success-message&quot;,&quot;failure&quot;:&quot;.failure-message&quot;}" >
 					<!--
 
 					Insert the form submission configuration here
 
 					-->
+					<input type="hidden" name="externalReferer" value="">
+					<input type="hidden" name="pageTitle" value=""> <!-- Copy of the title of the page -->
+					<input type="hidden" name="submissionPage" value=""> <!-- Copy of the page URL -->
+					<input type="hidden" name="lang" value="en">
+					<input type="hidden" name="pageOwner" value="gc:institutions/"> <!-- Department name from canada.ca controlled vocabulary -->
+					<input name="subject" type="hidden" value="Report a problem or mistake on this page">
 					<fieldset>
 						<legend>
 							<span class="field-name">Please select all that apply:</span>
@@ -88,14 +94,15 @@
 							<input name="problem12" type="hidden" value="">
 						</div>
 					</fieldset>
-					<strong><button type="submit" class="btn btn-primary wb-toggle" data-toggle='{"stateOff": "hide", "stateOn": "show", "selector": ".gc-rprt-prblm-tggl"}'>Submit</button></strong>
+					<button type="submit" class="btn btn-primary">Submit</button>
 				</form>
 
 			</div>
-			<div class="gc-rprt-prblm-thnk gc-rprt-prblm-tggl hide">
+			<div class="success-message hide">
 				<h3>Thank you for your help!</h3>
 				<p>You will not receive a reply. For enquiries, please <a href="https://www.canada.ca/en/contact.html">contact us</a>.</p>
 			</div>
+			<p class="failure-message hide">Something went wrong. Please submit your information via an alternative method.</p>
 		</div>
 	</div>
 </details>

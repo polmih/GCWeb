@@ -3,7 +3,7 @@
 	"title": "Documentation for page details site functionality",
 	"language": "en",
 	"altLangPage": "page-details-docs-fr.html",
-	"breadcrumb": [
+	"breadcrumbs": [
 		{ "title": "Canada.ca", "link": "https://www.canada.ca/en.html" }
 	],
 	"secondlevel": false,
@@ -43,7 +43,7 @@
 
 <h2>How to implement</h2>
 <ul>
-	<li><p>To show the "Report a problem on this page" button, create a <code>&lt;div&gt;</code> with the following data attribute: <code>data-ajax-replace="/sites/feedback/ajax/report-problem-en.html"</code>.</p>
+	<li><p>To show the "Report a problem on this page" button, create a <code>&lt;div&gt;</code> with the following data attribute: <code>data-ajax-replace="../feedback/ajax/report-problem-en.html"</code>.</p>
 		<p>For the basic HTML version, a link element should be created that points to the report a problem form page: <code>&lt;a class="btn btn-default btn-block" href="https://www.canada.ca/en/report-problem.html"&gt;Report a problem on this page&lt;/a&gt;</code></p>
 		<p>For more information about Data Ajax plugin, please visit <a href="https://wet-boew.github.io/wet-boew/docs/ref/data-ajax/data-ajax-en.html">Data Ajax documentation page</a></p>
 	</li>
@@ -83,12 +83,12 @@
 <div class="row">
 	<div class="col-md-6">
 		<h5>Version 2.0</h5>
-		<p>Check <a href="https://github.com/wet-boew/GCWeb/blob/master/sites/main-footer/inc-report-problem-en.html" target="_blank">this page</a> for the html inserted by the Data Ajax plugin </p>
+		<p>Check <a href="https://github.com/wet-boew/GCWeb/blob/master/sites/main-footer/inc-report-problem-en.html" >this page</a> for the html inserted by the Data Ajax plugin </p>
 <pre><code><ins>&lt;footer class="pagedetails"&gt;
 	&lt;h2 class="wb-inv"&gt;Page details&lt;/h2&gt;</ins>
 	&lt;div class="row"&gt;
 		&lt;div class="col-sm-6 col-md-5 col-lg-4"&gt;
-			<ins>&lt;div data-ajax-replace="/sites/feedback/ajax/report-problem-en.html" &gt;
+			<ins>&lt;div data-ajax-replace="../feedback/ajax/report-problem-en.html" &gt;
 					&lt;a class="btn btn-default btn-block" href="https://www.canada.ca/en/report-problem.html"&gt;Report a problem on this page&lt;/a&gt;
 				&lt;/div&gt;</ins>
 		&lt;/div&gt;
@@ -106,7 +106,7 @@
 <pre><code><del>&lt;div class="pagedetails"&gt;</del>
 	&lt;div class="row"&gt;
 		&lt;div class="col-sm-6 col-md-5 col-lg-4"&gt;
-			&lt;details class="brdr-0"&gt;
+			<del>&lt;details class="brdr-0"&gt;
 				&lt;summary class="btn btn-default text-center"&gt;Report a problem on this page&lt;/summary&gt;
 				&lt;div class="well row"&gt;
 					&lt;div class="gc-rprt-prblm"&gt;
@@ -119,7 +119,7 @@
 						&lt;/div&gt;
 					&lt;/div&gt;
 				&lt;/div&gt;
-			&lt;/details&gt;
+			&lt;/details&gt;</del>
 		&lt;/div&gt;
 		&lt;div class="wb-share col-sm-4 col-md-3 col-sm-offset-2 col-md-offset-4 col-lg-offset-5 wb-init wb-share-inited" data-wb-share='{&quot;lnkClass&quot;: &quot;btn btn-default btn-block&quot;}' &gt;
 		&lt;/div&gt;
@@ -192,7 +192,7 @@
 <div class="row">
 	<div class="col-md-6">
 		<h5>Version 2.0</h5>
-		<p>Check <a href="https://github.com/wet-boew/GCWeb/blob/master/sites/main-footer/inc-report-problem-en.html" target="_blank">this page</a> for the html inserted by the Data Ajax plugin </p>
+		<p>Check <a href="https://github.com/wet-boew/GCWeb/blob/master/sites/main-footer/inc-report-problem-en.html" >this page</a> for the html inserted by the Data Ajax plugin </p>
 <pre><code><ins>&lt;footer class="pagedetails"&gt;
 	&lt;h2 class="wb-inv"&gt;Page details&lt;/h2&gt;</ins>
 	&lt;div class="row"&gt;
@@ -213,7 +213,7 @@
 <pre><code><del>&lt;div class="pagedetails"&gt;</del>
 	&lt;div class="row"&gt;
 		&lt;div class="col-sm-6 col-md-5 col-lg-4"&gt;
-			&lt;details class="brdr-0"&gt;
+			<del>&lt;details class="brdr-0"&gt;
 				&lt;summary class="btn btn-default text-center"&gt;Report a problem on this page&lt;/summary&gt;
 				&lt;div class="well row"&gt;
 					&lt;div class="gc-rprt-prblm"&gt;
@@ -226,7 +226,7 @@
 						&lt;/div&gt;
 					&lt;/div&gt;
 				&lt;/div&gt;
-			&lt;/details&gt;
+			&lt;/details&gt;</del>
 		&lt;/div&gt;
 	&lt;/div&gt;
 	&lt;dl id="wb-dtmd"&gt;
