@@ -1,0 +1,14 @@
+{%- capture feedbackPath -%}
+	{%- if page.feedbackPath -%}
+		{{ page.feedbackPath }}
+	{%- elsif site.global.feedbackPath and site.global.feedbackPath.first -%}
+		{{ site.global.feedbackPath[ i18nText-lang ] }}
+	{%- endif -%}
+{%- endcapture -%}
+
+
+<div {% if feedbackPath -%}
+		data-ajax-replace="{{feedbackPath}}"
+	{%- endif -%}>
+	<a class="btn btn-default btn-block" href="{{ i18nText-feedbackLink }}">{{ i18nText-feedback }}</a>
+</div>
